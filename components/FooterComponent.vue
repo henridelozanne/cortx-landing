@@ -4,13 +4,16 @@
       <div class="footer-content">
         <div class="footer-brand">
           <div class="footer-branding">
-            <img
-              src="/cortx_logo_transparent_background.png"
-              alt="Cortx Logo"
-              class="footer-logo-image"
-              width="32"
-              height="32"
-            />
+            <picture>
+              <source srcset="/cortx-logo-32.webp" type="image/webp" />
+              <img
+                src="/cortx_logo_transparent_background.png"
+                alt="Cortx Logo"
+                class="footer-logo-image"
+                width="32"
+                height="32"
+              />
+            </picture>
             <h2 class="footer-logo">Cortx</h2>
           </div>
           <p class="footer-tagline">{{ t("footer.tagline") }}</p>
@@ -90,10 +93,16 @@ const { t } = useI18n();
   gap: 0.75rem;
 }
 
+.footer-branding picture {
+  display: flex;
+  align-items: center;
+}
+
 .footer-logo-image {
   width: 32px;
   height: 32px;
   object-fit: contain;
+  display: block;
 }
 
 .footer-logo {

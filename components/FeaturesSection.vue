@@ -2,12 +2,12 @@
   <section class="features" aria-labelledby="features-title">
     <div class="features-container">
       <h2 id="features-title" class="features-title">
-        {{ t('features.title') }}
+        {{ t("features.title") }}
       </h2>
-      
+
       <div class="features-grid">
-        <article 
-          v-for="(feature, index) in features" 
+        <article
+          v-for="(feature, index) in features"
           :key="feature.key"
           class="feature-card"
           :style="{ animationDelay: `${index * 0.1}s` }"
@@ -30,70 +30,97 @@
 </template>
 
 <script setup lang="ts">
-import { h } from 'vue'
+import { h } from "vue";
 
-const { t } = useI18n()
+const { t } = useI18n();
 
 const features = [
-  { key: 'flashcards' },
-  { key: 'repetition' },
-  { key: 'statistics' }
-]
+  { key: "flashcards" },
+  { key: "repetition" },
+  { key: "statistics" },
+];
 
 // Icon components
-const IconFlashcards = () => h('svg', {
-  width: 48,
-  height: 48,
-  viewBox: '0 0 24 24',
-  fill: 'currentColor',
-  stroke: 'none'
-}, [
-  // Carte arrière (gauche)
-  h('rect', { 
-    x: 4, y: 8, width: 10, height: 14, rx: 1.5,
-    transform: 'rotate(-15 9 15)',
-    opacity: '0.4'
-  }),
-  // Carte du milieu
-  h('rect', { 
-    x: 7, y: 6, width: 10, height: 14, rx: 1.5,
-    opacity: '0.7'
-  }),
-  // Carte avant (droite)
-  h('rect', { 
-    x: 10, y: 8, width: 10, height: 14, rx: 1.5,
-    transform: 'rotate(15 15 15)'
-  })
-])
+const IconFlashcards = () =>
+  h(
+    "svg",
+    {
+      width: 48,
+      height: 48,
+      viewBox: "0 0 24 24",
+      fill: "currentColor",
+      stroke: "none",
+    },
+    [
+      // Carte arrière (gauche)
+      h("rect", {
+        x: 4,
+        y: 8,
+        width: 10,
+        height: 14,
+        rx: 1.5,
+        transform: "rotate(-15 9 15)",
+        opacity: "0.4",
+      }),
+      // Carte du milieu
+      h("rect", {
+        x: 7,
+        y: 6,
+        width: 10,
+        height: 14,
+        rx: 1.5,
+        opacity: "0.7",
+      }),
+      // Carte avant (droite)
+      h("rect", {
+        x: 10,
+        y: 8,
+        width: 10,
+        height: 14,
+        rx: 1.5,
+        transform: "rotate(15 15 15)",
+      }),
+    ],
+  );
 
-const IconRepetition = () => h('svg', {
-  width: 48,
-  height: 48,
-  viewBox: '0 0 24 24',
-  fill: 'none',
-  stroke: 'currentColor',
-  'stroke-width': '2',
-  'stroke-linecap': 'round',
-  'stroke-linejoin': 'round'
-}, [
-  h('polyline', { points: '23 4 23 10 17 10' }),
-  h('path', { d: 'M20.49 15a9 9 0 1 1-2.12-9.36L23 10' })
-])
+const IconRepetition = () =>
+  h(
+    "svg",
+    {
+      width: 48,
+      height: 48,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      "stroke-width": "2",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round",
+    },
+    [
+      h("polyline", { points: "23 4 23 10 17 10" }),
+      h("path", { d: "M20.49 15a9 9 0 1 1-2.12-9.36L23 10" }),
+    ],
+  );
 
-const IconStatistics = () => h('svg', {
-  width: 48,
-  height: 48,
-  viewBox: '0 0 24 24',
-  fill: 'none',
-  stroke: 'currentColor',
-  'stroke-width': '2',
-  'stroke-linecap': 'round',
-  'stroke-linejoin': 'round'
-}, [
-  h('line', { x1: 18, y1: 20, x2: 18, y2: 10 }),
-  h('line', { x1: 12, y1: 20, x2: 12, y2: 4 }),
-  h('line', { x1: 6, y1: 20, x2: 6, y2: 14 })
-])
+const IconStatistics = () =>
+  h(
+    "svg",
+    {
+      width: 48,
+      height: 48,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      "stroke-width": "2",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round",
+    },
+    [
+      h("line", { x1: 18, y1: 20, x2: 18, y2: 10 }),
+      h("line", { x1: 12, y1: 20, x2: 12, y2: 4 }),
+      h("line", { x1: 6, y1: 20, x2: 6, y2: 14 }),
+    ],
+  );
 
 // Intersection Observer for scroll animations
 onMounted(() => {
@@ -102,26 +129,26 @@ onMounted(() => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-in')
+            entry.target.classList.add("animate-in");
           }
-        })
+        });
       },
-      { threshold: 0.1, rootMargin: '0px 0px -100px 0px' }
-    )
+      { threshold: 0.1, rootMargin: "0px 0px -100px 0px" },
+    );
 
-    document.querySelectorAll('.feature-card').forEach((card) => {
-      observer.observe(card)
-    })
+    document.querySelectorAll(".feature-card").forEach((card) => {
+      observer.observe(card);
+    });
 
-    onUnmounted(() => observer.disconnect())
+    onUnmounted(() => observer.disconnect());
   }
-})
+});
 </script>
 
 <style scoped>
 .features {
   padding: 6rem 2rem;
-  background: white;
+  background: transparent;
 }
 
 .features-container {
@@ -147,7 +174,8 @@ onMounted(() => {
 .feature-card {
   padding: 2.5rem;
   border-radius: 16px;
-  background: #fafafa;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(4px);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   transform: translateY(30px);
@@ -160,7 +188,7 @@ onMounted(() => {
 .feature-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 40px rgba(95, 51, 225, 0.15);
-  background: white;
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .feature-icon {
@@ -204,16 +232,16 @@ onMounted(() => {
   .features {
     padding: 4rem 1.5rem;
   }
-  
+
   .features-title {
     margin-bottom: 3rem;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .feature-card {
     padding: 2rem;
   }

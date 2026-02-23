@@ -65,6 +65,13 @@ export default defineNuxtConfig({
           href: "/cortx-logo.png",
         },
         { rel: "manifest", href: "/manifest.json" },
+        {
+          rel: "preload",
+          as: "image",
+          href: "/cortx-logo-80.webp",
+          type: "image/webp",
+          fetchpriority: "high",
+        },
       ],
     },
     pageTransition: { name: "page", mode: "out-in" },

@@ -15,12 +15,15 @@
           class="screenshot-item"
           :style="{ animationDelay: `${i * 0.15}s` }"
         >
-          <img
-            :src="`/ss-${i}.png`"
-            :alt="`Screenshot ${i}`"
-            class="screenshot-image"
-            loading="lazy"
-          />
+          <picture>
+            <source :srcset="`/ss-${i}.webp`" type="image/webp" />
+            <img
+              :src="`/ss-${i}.png`"
+              :alt="`Screenshot ${i}`"
+              class="screenshot-image"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </div>
     </div>
@@ -55,7 +58,7 @@ onMounted(() => {
 <style scoped>
 .screenshots {
   padding: 6rem 2rem;
-  background: #ffffff;
+  background: transparent;
 }
 
 .screenshots-container {

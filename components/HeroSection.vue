@@ -1,25 +1,29 @@
 <template>
   <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-content animate-fade-in">
+    <div class="hero-content">
       <div class="hero-branding">
-        <img
-          src="/cortx-logo.png"
-          alt="Cortx Logo"
-          class="hero-logo"
-          width="80"
-          height="80"
-        />
+        <picture>
+          <source srcset="/cortx-logo-80.webp" type="image/webp" />
+          <img
+            src="/cortx-logo.png"
+            alt="Cortx Logo"
+            class="hero-logo"
+            width="80"
+            height="80"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </picture>
         <h2 class="hero-app-name">Cortx</h2>
       </div>
       <h1 id="hero-title" class="hero-title" v-html="t('hero.title')"></h1>
       <p class="hero-subtitle">
         {{ t("hero.subtitle") }}
       </p>
-      <a
-        href="#"
+      <button
         class="app-store-button"
         data-app-store-link
-        role="button"
+        type="button"
         :aria-label="t('hero.cta')"
       >
         <svg
@@ -38,7 +42,7 @@
           <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg>
         <span>{{ t("hero.cta") }}</span>
-      </a>
+      </button>
     </div>
   </section>
 </template>
@@ -54,7 +58,7 @@ const { t } = useI18n();
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: #ffffff;
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
@@ -117,11 +121,14 @@ const { t } = useI18n();
   color: white;
   padding: 1rem 2rem;
   border-radius: 12px;
+  border: none;
   font-size: 1.125rem;
   font-weight: 600;
+  font-family: inherit;
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 4px 20px rgba(95, 51, 225, 0.3);
+  cursor: pointer;
 }
 
 .app-store-button:hover {
@@ -143,22 +150,7 @@ const { t } = useI18n();
   flex-shrink: 0;
 }
 
-.animate-fade-in {
-  animation: fadeInUp 0.8s ease-out;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideFromLogo {
+@media (max-width: 768px) {
   .hero {
     min-height: calc(100vh - 4rem);
     padding: 6rem 1.5rem 2rem;
