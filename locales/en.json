@@ -27,12 +27,13 @@
     }
   },
   "screenshots": {
-    "title": "Beautiful, intuitive interface",
-    "subtitle": "Cortx is designed to help you focus on what matters: learning."
+    "title": "Powered by proven learning science",
+    "subtitle": "Cortx is designed for long-term memory"
   },
   "footer": {
-    "tagline": "Master any subject with smart flashcards",
+    "tagline": "Study smarter. Remember longer.",
     "privacy": "Privacy Policy",
+    "madeWith": "Made with ❤️ by",
     "contact": "Contact us at",
     "copyright": "© 2026 Cortx. All rights reserved."
   },

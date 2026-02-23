@@ -3,7 +3,16 @@
     <div class="footer-container">
       <div class="footer-content">
         <div class="footer-brand">
-          <h2 class="footer-logo">Cortx</h2>
+          <div class="footer-branding">
+            <img
+              src="/cortx_logo_transparent_background.png"
+              alt="Cortx Logo"
+              class="footer-logo-image"
+              width="32"
+              height="32"
+            />
+            <h2 class="footer-logo">Cortx</h2>
+          </div>
           <p class="footer-tagline">{{ t("footer.tagline") }}</p>
         </div>
 
@@ -11,6 +20,17 @@
           <NuxtLink to="/privacy" class="footer-link">
             {{ t("footer.privacy") }}
           </NuxtLink>
+          <p class="footer-made-by">
+            {{ t("footer.madeWith") }}
+            <a
+              href="https://www.henri-delozanne.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-author-link"
+            >
+              Henri Delozanne
+            </a>
+          </p>
         </nav>
 
         <div class="footer-contact">
@@ -63,6 +83,19 @@ const { t } = useI18n();
   gap: 0.75rem;
 }
 
+.footer-branding {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-logo-image {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
 .footer-logo {
   font-size: 1.5rem;
   font-weight: 700;
@@ -80,6 +113,30 @@ const { t } = useI18n();
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+}
+
+.footer-made-by {
+  color: #a0a0a0;
+  font-size: 0.9375rem;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.footer-author-link {
+  color: #8b6aff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-author-link:hover {
+  color: #a388ff;
+  text-decoration: underline;
+}
+
+.footer-author-link:focus {
+  outline: 2px solid #5f33e1;
+  outline-offset: 4px;
+  border-radius: 2px;
 }
 
 .footer-link {

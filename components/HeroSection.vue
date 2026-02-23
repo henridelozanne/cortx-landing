@@ -68,10 +68,11 @@ const { t } = useI18n();
 
 .hero-branding {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 
 .hero-logo {
@@ -82,7 +83,7 @@ const { t } = useI18n();
 }
 
 .hero-app-name {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #5f33e1;
   letter-spacing: -0.01em;
@@ -157,7 +158,7 @@ const { t } = useI18n();
   }
 }
 
-@media (max-width: 768px) {
+@keyframes slideFromLogo {
   .hero {
     min-height: calc(100vh - 4rem);
     padding: 6rem 1.5rem 2rem;

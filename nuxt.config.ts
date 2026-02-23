@@ -58,11 +58,11 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        { rel: "icon", type: "image/png", href: "/favicon.png" },
+        { rel: "icon", type: "image/png", href: "/cortx-logo.png" },
         {
           rel: "apple-touch-icon",
           sizes: "180x180",
-          href: "/apple-touch-icon.png",
+          href: "/cortx-logo.png",
         },
         { rel: "manifest", href: "/manifest.json" },
       ],
