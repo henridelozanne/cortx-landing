@@ -10,7 +10,7 @@
     "cta": "Download on the App Store"
   },
   "features": {
-    "title": "Everything you need to master any subject",
+    "title": "The essential tool to make knowledge stick",
     "items": {
       "flashcards": {
         "title": "Smart flashcards",
@@ -27,8 +27,8 @@
     }
   },
   "screenshots": {
-    "title": "Powered by proven learning science",
-    "subtitle": "Cortx is designed for long-term memory"
+    "title": "A method built for long-term retention",
+    "subtitle": "An intelligent review system brings each card back right when your memory needs it."
   },
   "footer": {
     "tagline": "Study smarter. Remember longer.",

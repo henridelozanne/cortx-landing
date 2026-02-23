@@ -10,7 +10,7 @@
     "cta": "Télécharger sur l'App Store"
   },
   "features": {
-    "title": "Tout ce dont vous avez besoin pour maîtriser n'importe quel sujet",
+    "title": "L'outil essentiel pour ancrer vos connaissances",
     "items": {
       "flashcards": {
         "title": "Flashcards intelligentes",
@@ -27,11 +27,11 @@
     }
   },
   "screenshots": {
-    "title": "Interface élégante et intuitive",
-    "subtitle": "Cortx est conçu pour vous aider à vous concentrer sur ce qui compte : apprendre."
+    "title": "Une méthode pensée pour retenir durablement",
+    "subtitle": "Grâce à un système de révision intelligent, chaque carte revient exactement quand votre mémoire en a besoin."
   },
   "footer": {
-    "tagline": "Maîtrisez n'importe quel sujet avec des flashcards intelligentes",
+    "tagline": "Apprenez mieux. Mémorisez durablement.",
     "privacy": "Politique de confidentialité",
     "madeWith": "Conçu avec ❤️ par",
     "contact": "Contactez-nous à",
