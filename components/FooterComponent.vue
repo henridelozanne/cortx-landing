@@ -5,7 +5,14 @@
         <div class="footer-brand">
           <div class="footer-branding">
             <picture>
-              <source srcset="/cortx-logo-32.webp" type="image/webp" />
+              <source
+                srcset="
+                  /cortx-logo-32.webp    1x,
+                  /cortx-logo-32@2x.webp 2x,
+                  /cortx-logo-32@3x.webp 3x
+                "
+                type="image/webp"
+              />
               <img
                 src="/cortx_logo_transparent_background.png"
                 alt="Cortx Logo"

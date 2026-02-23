@@ -3,7 +3,14 @@
     <div class="hero-content">
       <div class="hero-branding">
         <picture>
-          <source srcset="/cortx-logo-80.webp" type="image/webp" />
+          <source
+            srcset="
+              /cortx-logo-80.webp    1x,
+              /cortx-logo-80@2x.webp 2x,
+              /cortx-logo-80@3x.webp 3x
+            "
+            type="image/webp"
+          />
           <img
             src="/cortx-logo.png"
             alt="Cortx Logo"
