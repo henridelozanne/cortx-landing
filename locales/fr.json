@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "MemoLooper - Apprenez mieux. Mémorisez durablement.",
-    "description": "MemoLooper vous aide à mémoriser n'importe quoi grâce aux flashcards et à la répétition espacée. Transformez vos notes en connaissances durables et révisez au moment idéal.",
+    "title": "Cortx - Apprenez mieux. Mémorisez durablement.",
+    "description": "Cortx vous aide à mémoriser n'importe quoi grâce aux flashcards et à la répétition espacée. Transformez vos notes en connaissances durables et révisez au moment idéal.",
     "appStore": "Télécharger sur l'App Store"
   },
   "hero": {
     "title": "Apprenez mieux.<br>Mémorisez durablement.",
-    "subtitle": "MemoLooper vous aide à mémoriser n'importe quoi grâce aux flashcards et à la répétition espacée. Transformez vos notes en connaissances durables et révisez au moment idéal.",
+    "subtitle": "Cortx vous aide à mémoriser n'importe quoi grâce aux flashcards et à la répétition espacée. Transformez vos notes en connaissances durables et révisez au moment idéal.",
     "cta": "Télécharger sur l'App Store"
   },
   "features": {
@@ -18,7 +18,7 @@
       },
       "repetition": {
         "title": "Apprentissage par répétition espacée",
-        "description": "Révisez vos cartes au bon moment grâce à une méthode de mémorisation éprouvée basée sur la répétition espacée. MemoLooper planifie automatiquement vos révisions et envoie des rappels quotidiens pour ne jamais oublier d'étudier."
+        "description": "Révisez vos cartes au bon moment grâce à une méthode de mémorisation éprouvée basée sur la répétition espacée. Cortx planifie automatiquement vos révisions et envoie des rappels quotidiens pour ne jamais oublier d'étudier."
       },
       "statistics": {
         "title": "Statistiques avancées",
@@ -28,13 +28,13 @@
   },
   "screenshots": {
     "title": "Interface élégante et intuitive",
-    "subtitle": "MemoLooper est conçu pour vous aider à vous concentrer sur ce qui compte : apprendre."
+    "subtitle": "Cortx est conçu pour vous aider à vous concentrer sur ce qui compte : apprendre."
   },
   "footer": {
     "tagline": "Maîtrisez n'importe quel sujet avec des flashcards intelligentes",
     "privacy": "Politique de confidentialité",
     "contact": "Contactez-nous à",
-    "copyright": "© 2026 MemoLooper. Tous droits réservés."
+    "copyright": "© 2026 Cortx. Tous droits réservés."
   },
   "privacy": {
     "title": "Politique de confidentialité",
@@ -42,7 +42,7 @@
     "sections": {
       "editor": {
         "title": "Éditeur de l'application",
-        "description": "L'application MemoLooper est publiée par Henri Delozanne, un développeur indépendant basé en France. Pour toute question, vous pouvez nous contacter par email à :",
+        "description": "L'application Cortx est publiée par Henri Delozanne, un développeur indépendant basé en France. Pour toute question, vous pouvez nous contacter par email à :",
         "address": "L'adresse professionnelle est disponible sur demande."
       },
       "hosting": {
@@ -52,7 +52,7 @@
       },
       "personalData": {
         "title": "Données personnelles",
-        "collection": "L'application MemoLooper ne collecte que les données strictement nécessaires à son bon fonctionnement (cartes, progression, préférences).",
+        "collection": "L'application Cortx ne collecte que les données strictement nécessaires à son bon fonctionnement (cartes, progression, préférences).",
         "ads": "Aucune donnée n'est utilisée à des fins publicitaires.",
         "deletion": "Vous pouvez demander la suppression de vos données personnelles à tout moment en nous contactant."
       },
@@ -77,7 +77,7 @@
       },
       "intellectualProperty": {
         "title": "Propriété intellectuelle",
-        "copyright": "Tous les contenus de l'application MemoLooper (textes, visuels, fonctionnalités) sont protégés par le droit d'auteur.",
+        "copyright": "Tous les contenus de l'application Cortx (textes, visuels, fonctionnalités) sont protégés par le droit d'auteur.",
         "prohibition": "Toute reproduction non autorisée est interdite."
       },
       "termsOfUse": {

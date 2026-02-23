@@ -3,20 +3,20 @@
     <div class="footer-container">
       <div class="footer-content">
         <div class="footer-brand">
-          <h2 class="footer-logo">MemoLooper</h2>
-          <p class="footer-tagline">{{ t('footer.tagline') }}</p>
+          <h2 class="footer-logo">Cortx</h2>
+          <p class="footer-tagline">{{ t("footer.tagline") }}</p>
         </div>
-        
+
         <nav class="footer-nav" aria-label="Footer navigation">
           <NuxtLink to="/privacy" class="footer-link">
-            {{ t('footer.privacy') }}
+            {{ t("footer.privacy") }}
           </NuxtLink>
         </nav>
-        
+
         <div class="footer-contact">
-          <p>{{ t('footer.contact') }}</p>
-          <a 
-            href="mailto:memo.flashcards.contact@gmail.com" 
+          <p>{{ t("footer.contact") }}</p>
+          <a
+            href="mailto:memo.flashcards.contact@gmail.com"
             class="footer-email"
             aria-label="Send email to memo.flashcards.contact@gmail.com"
           >
@@ -24,16 +24,16 @@
           </a>
         </div>
       </div>
-      
+
       <div class="footer-bottom">
-        <p class="footer-copyright">{{ t('footer.copyright') }}</p>
+        <p class="footer-copyright">{{ t("footer.copyright") }}</p>
       </div>
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+const { t } = useI18n();
 </script>
 
 <style scoped>
@@ -144,7 +144,7 @@ const { t } = useI18n()
   .footer {
     padding: 3rem 1.5rem 1.5rem;
   }
-  
+
   .footer-content {
     grid-template-columns: 1fr;
     gap: 2rem;

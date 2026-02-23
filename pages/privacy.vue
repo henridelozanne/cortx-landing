@@ -1,94 +1,104 @@
 <template>
   <div class="privacy-page">
     <LanguageSwitcher />
-    
+
     <main>
       <header class="privacy-header">
         <div class="privacy-header-content">
           <NuxtLink to="/" class="back-link" aria-label="Back to home">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
               <line x1="19" y1="12" x2="5" y2="12"></line>
               <polyline points="12 19 5 12 12 5"></polyline>
             </svg>
-            <span>{{ locale === 'en' ? 'Back' : 'Retour' }}</span>
+            <span>{{ locale === "en" ? "Back" : "Retour" }}</span>
           </NuxtLink>
-          <h1 class="privacy-title">{{ t('privacy.title') }}</h1>
-          <p class="privacy-updated">{{ t('privacy.lastUpdated') }}</p>
+          <h1 class="privacy-title">{{ t("privacy.title") }}</h1>
+          <p class="privacy-updated">{{ t("privacy.lastUpdated") }}</p>
         </div>
       </header>
 
       <div class="privacy-content">
         <article class="privacy-article">
-        <!-- Application Publisher -->
-        <section class="privacy-section">
-          <h2>{{ t('privacy.sections.editor.title') }}</h2>
-          <p>{{ t('privacy.sections.editor.description') }}</p>
-          <p class="contact-email">
-            <a href="mailto:memo.flashcards.contact@gmail.com">
-              memo.flashcards.contact@gmail.com
-            </a>
-          </p>
-          <p>{{ t('privacy.sections.editor.address') }}</p>
-        </section>
+          <!-- Application Publisher -->
+          <section class="privacy-section">
+            <h2>{{ t("privacy.sections.editor.title") }}</h2>
+            <p>{{ t("privacy.sections.editor.description") }}</p>
+            <p class="contact-email">
+              <a href="mailto:memo.flashcards.contact@gmail.com">
+                memo.flashcards.contact@gmail.com
+              </a>
+            </p>
+            <p>{{ t("privacy.sections.editor.address") }}</p>
+          </section>
 
-        <!-- Hosting -->
-        <section class="privacy-section">
-          <h2>{{ t('privacy.sections.hosting.title') }}</h2>
-          <p>{{ t('privacy.sections.hosting.description') }}</p>
-          <p>{{ t('privacy.sections.hosting.privacy') }}</p>
-        </section>
+          <!-- Hosting -->
+          <section class="privacy-section">
+            <h2>{{ t("privacy.sections.hosting.title") }}</h2>
+            <p>{{ t("privacy.sections.hosting.description") }}</p>
+            <p>{{ t("privacy.sections.hosting.privacy") }}</p>
+          </section>
 
-        <!-- Personal Data -->
-        <section class="privacy-section">
-          <h2>{{ t('privacy.sections.personalData.title') }}</h2>
-          <p>{{ t('privacy.sections.personalData.collection') }}</p>
-          <p>{{ t('privacy.sections.personalData.ads') }}</p>
-          <p>{{ t('privacy.sections.personalData.deletion') }}</p>
-        </section>
+          <!-- Personal Data -->
+          <section class="privacy-section">
+            <h2>{{ t("privacy.sections.personalData.title") }}</h2>
+            <p>{{ t("privacy.sections.personalData.collection") }}</p>
+            <p>{{ t("privacy.sections.personalData.ads") }}</p>
+            <p>{{ t("privacy.sections.personalData.deletion") }}</p>
+          </section>
 
-        <!-- Third-Party Services -->
-        <section class="privacy-section">
-          <h2>{{ t('privacy.sections.thirdPartyServices.title') }}</h2>
-          <p>{{ t('privacy.sections.thirdPartyServices.description') }}</p>
-          <ul>
-            <li>{{ t('privacy.sections.thirdPartyServices.sentry') }}</li>
-            <li>{{ t('privacy.sections.thirdPartyServices.posthog') }}</li>
-            <li>{{ t('privacy.sections.thirdPartyServices.revenuecat') }}</li>
-            <li>{{ t('privacy.sections.thirdPartyServices.web3forms') }}</li>
-          </ul>
-        </section>
+          <!-- Third-Party Services -->
+          <section class="privacy-section">
+            <h2>{{ t("privacy.sections.thirdPartyServices.title") }}</h2>
+            <p>{{ t("privacy.sections.thirdPartyServices.description") }}</p>
+            <ul>
+              <li>{{ t("privacy.sections.thirdPartyServices.sentry") }}</li>
+              <li>{{ t("privacy.sections.thirdPartyServices.posthog") }}</li>
+              <li>{{ t("privacy.sections.thirdPartyServices.revenuecat") }}</li>
+              <li>{{ t("privacy.sections.thirdPartyServices.web3forms") }}</li>
+            </ul>
+          </section>
 
-        <!-- Permissions and Access -->
-        <section class="privacy-section">
-          <h2>{{ t('privacy.sections.permissions.title') }}</h2>
-          <p>{{ t('privacy.sections.permissions.description') }}</p>
-          <ul>
-            <li>{{ t('privacy.sections.permissions.photos') }}</li>
-            <li>{{ t('privacy.sections.permissions.notifications') }}</li>
-          </ul>
-        </section>
+          <!-- Permissions and Access -->
+          <section class="privacy-section">
+            <h2>{{ t("privacy.sections.permissions.title") }}</h2>
+            <p>{{ t("privacy.sections.permissions.description") }}</p>
+            <ul>
+              <li>{{ t("privacy.sections.permissions.photos") }}</li>
+              <li>{{ t("privacy.sections.permissions.notifications") }}</li>
+            </ul>
+          </section>
 
-        <!-- Distribution Platforms -->
-        <section class="privacy-section">
-          <h2>{{ t('privacy.sections.distribution.title') }}</h2>
-          <p>{{ t('privacy.sections.distribution.platforms') }}</p>
-          <p>{{ t('privacy.sections.distribution.policies') }}</p>
-        </section>
+          <!-- Distribution Platforms -->
+          <section class="privacy-section">
+            <h2>{{ t("privacy.sections.distribution.title") }}</h2>
+            <p>{{ t("privacy.sections.distribution.platforms") }}</p>
+            <p>{{ t("privacy.sections.distribution.policies") }}</p>
+          </section>
 
-        <!-- Intellectual Property -->
-        <section class="privacy-section">
-          <h2>{{ t('privacy.sections.intellectualProperty.title') }}</h2>
-          <p>{{ t('privacy.sections.intellectualProperty.copyright') }}</p>
-          <p>{{ t('privacy.sections.intellectualProperty.prohibition') }}</p>
-        </section>
+          <!-- Intellectual Property -->
+          <section class="privacy-section">
+            <h2>{{ t("privacy.sections.intellectualProperty.title") }}</h2>
+            <p>{{ t("privacy.sections.intellectualProperty.copyright") }}</p>
+            <p>{{ t("privacy.sections.intellectualProperty.prohibition") }}</p>
+          </section>
 
-        <!-- Terms of Use -->
-        <section class="privacy-section">
-          <h2>{{ t('privacy.sections.termsOfUse.title') }}</h2>
-          <p>{{ t('privacy.sections.termsOfUse.version') }}</p>
-          <p>{{ t('privacy.sections.termsOfUse.compliance') }}</p>
-        </section>
-      </article>
+          <!-- Terms of Use -->
+          <section class="privacy-section">
+            <h2>{{ t("privacy.sections.termsOfUse.title") }}</h2>
+            <p>{{ t("privacy.sections.termsOfUse.version") }}</p>
+            <p>{{ t("privacy.sections.termsOfUse.compliance") }}</p>
+          </section>
+        </article>
       </div>
     </main>
 
@@ -97,28 +107,28 @@
 </template>
 
 <script setup lang="ts">
-const { t, locale } = useI18n()
+const { t, locale } = useI18n();
 
 useHead({
   htmlAttrs: {
-    lang: computed(() => locale.value)
+    lang: computed(() => locale.value),
   },
-  title: computed(() => `${t('privacy.title')} - MemoLooper`),
+  title: computed(() => `${t("privacy.title")} - Cortx`),
   meta: [
     {
-      name: 'description',
-      content: computed(() => 
-        locale.value === 'en' 
-          ? 'Privacy policy for MemoLooper app' 
-          : 'Politique de confidentialité de l\'application MemoLooper'
-      )
+      name: "description",
+      content: computed(() =>
+        locale.value === "en"
+          ? "Privacy policy for Cortx app"
+          : "Politique de confidentialité de l'application Cortx",
+      ),
     },
     {
-      name: 'robots',
-      content: 'index, follow'
-    }
-  ]
-})
+      name: "robots",
+      content: "index, follow",
+    },
+  ],
+});
 </script>
 
 <style scoped>
@@ -215,7 +225,7 @@ useHead({
 }
 
 .privacy-section li::before {
-  content: '•';
+  content: "•";
   position: absolute;
   left: 0.5rem;
   color: #5f33e1;
@@ -248,11 +258,11 @@ useHead({
   .privacy-header {
     padding: 5rem 1.5rem 2rem;
   }
-  
+
   .privacy-content {
     padding: 3rem 1.5rem;
   }
-  
+
   .privacy-section {
     margin-bottom: 2.5rem;
   }

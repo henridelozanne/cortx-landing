@@ -1,4 +1,4 @@
-# Guide de déploiement MemoLooper Landing Page
+# Guide de déploiement Cortx Landing Page
 
 ## 🚀 Déploiement sur Vercel (Recommandé)
 
@@ -23,6 +23,7 @@ Vercel est la solution la plus simple pour déployer un site Nuxt 3.
 5. **Déployez** 🎉
 
 ### Configuration custom domain :
+
 - Ajoutez votre domaine dans les paramètres Vercel
 - Configurez les DNS selon les instructions
 
@@ -38,6 +39,7 @@ Vercel est la solution la plus simple pour déployer un site Nuxt 3.
    - Connectez votre repository
 
 3. **Build settings :**
+
    ```
    Build command: npm run generate
    Publish directory: .output/public
@@ -49,7 +51,9 @@ Vercel est la solution la plus simple pour déployer un site Nuxt 3.
 5. **Deploy site** 🎉
 
 ### Netlify.toml (optionnel) :
+
 Créez un fichier `netlify.toml` à la racine :
+
 ```toml
 [build]
   command = "npm run generate"
@@ -73,6 +77,7 @@ Créez un fichier `netlify.toml` à la racine :
    - Connectez votre repository
 
 3. **Build configuration :**
+
    ```
    Build command: npm run generate
    Build output directory: .output/public
@@ -92,6 +97,7 @@ Si vous utilisez un hébergeur traditionnel :
 ### Étapes :
 
 1. **Générez le site statique localement :**
+
    ```bash
    npm run generate
    ```
@@ -147,6 +153,7 @@ Si vous utilisez un hébergeur traditionnel :
 Pour ajouter Google Analytics :
 
 1. **Installez le module Nuxt :**
+
    ```bash
    npm install @nuxtjs/google-analytics
    ```
@@ -166,14 +173,17 @@ Pour ajouter Google Analytics :
 ## 🆘 Dépannage
 
 ### Le site ne se build pas
+
 - Vérifiez les erreurs avec `npm run build`
 - Supprimez `node_modules` et réinstallez : `rm -rf node_modules && npm install`
 
 ### Les traductions ne fonctionnent pas
+
 - Vérifiez que les fichiers JSON sont valides
 - Vérifiez les clés de traduction dans les composants
 
 ### Les images ne s'affichent pas
+
 - Vérifiez que les images sont dans le dossier `public/`
 - Utilisez des chemins absolus : `/images/screenshot.png`
 

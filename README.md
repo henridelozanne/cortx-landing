@@ -1,6 +1,6 @@
-# MemoLooper Landing Page
+# Cortx Landing Page
 
-Une landing page moderne et performante pour l'app iOS MemoLooper, construite avec Nuxt 3.
+Une landing page moderne et performante pour l'app iOS Cortx, construite avec Nuxt 3.
 
 ## 🚀 Fonctionnalités
 
@@ -85,6 +85,7 @@ Remplacez les placeholders de screenshots :
 ### Traductions
 
 Modifiez les fichiers :
+
 - [locales/en.json](locales/en.json) pour l'anglais
 - [locales/fr.json](locales/fr.json) pour le français
 
@@ -93,18 +94,21 @@ Modifiez les fichiers :
 Le site peut être déployé sur n'importe quel service d'hébergement statique :
 
 ### Vercel (recommandé)
+
 ```bash
 npm run build
 # Déployer le dossier .output/public
 ```
 
 ### Netlify
+
 ```bash
 npm run generate
 # Déployer le dossier .output/public
 ```
 
 ### GitHub Pages / Cloudflare Pages
+
 ```bash
 npm run generate
 # Déployer le dossier .output/public
@@ -132,5 +136,4 @@ Email : memo.flashcards.contact@gmail.com
 
 ## 📄 License
 
-© 2026 MemoLooper. Tous droits réservés.
-
+© 2026 Cortx. Tous droits réservés.

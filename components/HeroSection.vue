@@ -2,33 +2,49 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-content animate-fade-in">
       <div class="hero-branding">
-        <img src="/memolooper-logo.png" alt="MemoLooper Logo" class="hero-logo" width="80" height="80">
-        <h2 class="hero-app-name">MemoLooper</h2>
+        <img
+          src="/cortx-logo.png"
+          alt="Cortx Logo"
+          class="hero-logo"
+          width="80"
+          height="80"
+        />
+        <h2 class="hero-app-name">Cortx</h2>
       </div>
-      <h1 id="hero-title" class="hero-title" v-html="t('hero.title')">
-      </h1>
+      <h1 id="hero-title" class="hero-title" v-html="t('hero.title')"></h1>
       <p class="hero-subtitle">
-        {{ t('hero.subtitle') }}
+        {{ t("hero.subtitle") }}
       </p>
-      <a 
-        href="#" 
+      <a
+        href="#"
         class="app-store-button"
         data-app-store-link
         role="button"
         :aria-label="t('hero.cta')"
       >
-        <svg class="app-store-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <svg
+          class="app-store-icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
           <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
           <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg>
-        <span>{{ t('hero.cta') }}</span>
+        <span>{{ t("hero.cta") }}</span>
       </a>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+const { t } = useI18n();
 </script>
 
 <style scoped>
@@ -146,15 +162,15 @@ const { t } = useI18n()
     min-height: calc(100vh - 4rem);
     padding: 6rem 1.5rem 2rem;
   }
-  
+
   .hero-title {
     margin-bottom: 1.25rem;
   }
-  
+
   .hero-subtitle {
     margin-bottom: 2rem;
   }
-  
+
   .app-store-button {
     padding: 0.875rem 1.75rem;
     font-size: 1rem;
