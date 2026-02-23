@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "MemoLooper - Apprenez mieux. Mémorisez durablement.",
+    "description": "MemoLooper vous aide à mémoriser n'importe quoi grâce aux flashcards et à la répétition espacée. Transformez vos notes en connaissances durables et révisez au moment idéal.",
+    "appStore": "Télécharger sur l'App Store"
+  },
+  "hero": {
+    "title": "Apprenez mieux.<br>Mémorisez durablement.",
+    "subtitle": "MemoLooper vous aide à mémoriser n'importe quoi grâce aux flashcards et à la répétition espacée. Transformez vos notes en connaissances durables et révisez au moment idéal.",
+    "cta": "Télécharger sur l'App Store"
+  },
+  "features": {
+    "title": "Tout ce dont vous avez besoin pour maîtriser n'importe quel sujet",
+    "items": {
+      "flashcards": {
+        "title": "Flashcards intelligentes",
+        "description": "Créez des flashcards en quelques secondes et organisez-les par collections pour n'importe quel sujet. Ajoutez des images, du texte enrichi, des listes ou du code pour rendre vos cartes plus claires et plus efficaces."
+      },
+      "repetition": {
+        "title": "Apprentissage par répétition espacée",
+        "description": "Révisez vos cartes au bon moment grâce à une méthode de mémorisation éprouvée basée sur la répétition espacée. MemoLooper planifie automatiquement vos révisions et envoie des rappels quotidiens pour ne jamais oublier d'étudier."
+      },
+      "statistics": {
+        "title": "Statistiques avancées",
+        "description": "Comprenez votre apprentissage grâce à des statistiques détaillées sur votre progression, vos habitudes et votre mémoire. Suivez votre activité de révision, la répartition des cartes, votre régularité et voyez concrètement comment vos connaissances évoluent."
+      }
+    }
+  },
+  "screenshots": {
+    "title": "Interface élégante et intuitive",
+    "subtitle": "MemoLooper est conçu pour vous aider à vous concentrer sur ce qui compte : apprendre."
+  },
+  "footer": {
+    "tagline": "Maîtrisez n'importe quel sujet avec des flashcards intelligentes",
+    "privacy": "Politique de confidentialité",
+    "contact": "Contactez-nous à",
+    "copyright": "© 2026 MemoLooper. Tous droits réservés."
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour : février 2026",
+    "sections": {
+      "editor": {
+        "title": "Éditeur de l'application",
+        "description": "L'application MemoLooper est publiée par Henri Delozanne, un développeur indépendant basé en France. Pour toute question, vous pouvez nous contacter par email à :",
+        "address": "L'adresse professionnelle est disponible sur demande."
+      },
+      "hosting": {
+        "title": "Hébergement",
+        "description": "Les données de l'application sont hébergées par Supabase, un fournisseur de services cloud sécurisé basé en Europe et aux États-Unis.",
+        "privacy": "Les informations stockées sont exclusivement liées à l'utilisation de l'application et ne sont ni partagées ni vendues à des tiers."
+      },
+      "personalData": {
+        "title": "Données personnelles",
+        "collection": "L'application MemoLooper ne collecte que les données strictement nécessaires à son bon fonctionnement (cartes, progression, préférences).",
+        "ads": "Aucune donnée n'est utilisée à des fins publicitaires.",
+        "deletion": "Vous pouvez demander la suppression de vos données personnelles à tout moment en nous contactant."
+      },
+      "thirdPartyServices": {
+        "title": "Services tiers",
+        "description": "Pour améliorer l'application, nous utilisons les services de confiance suivants :",
+        "sentry": "Sentry : Surveillance des erreurs et rapports de crash",
+        "posthog": "PostHog : Analyses d'utilisation anonymes (enregistrement de session désactivé)",
+        "revenuecat": "RevenueCat : Gestion des abonnements et des achats intégrés",
+        "web3forms": "Web3Forms : Gestion du formulaire de contact pour les rapports de bugs et demandes de fonctionnalités"
+      },
+      "permissions": {
+        "title": "Permissions et accès",
+        "description": "L'application peut demander les permissions suivantes :",
+        "photos": "Photos/Caméra : Uniquement lorsque vous choisissez d'ajouter des images à vos flashcards",
+        "notifications": "Notifications : Pour envoyer des rappels de révision quotidiens (optionnel)"
+      },
+      "distribution": {
+        "title": "Plateformes de distribution",
+        "platforms": "L'application est distribuée via l'App Store (Apple) et le Google Play Store (Android).",
+        "policies": "Ces plateformes peuvent, de leur côté, collecter certaines données techniques conformément à leurs propres politiques de confidentialité."
+      },
+      "intellectualProperty": {
+        "title": "Propriété intellectuelle",
+        "copyright": "Tous les contenus de l'application MemoLooper (textes, visuels, fonctionnalités) sont protégés par le droit d'auteur.",
+        "prohibition": "Toute reproduction non autorisée est interdite."
+      },
+      "termsOfUse": {
+        "title": "Conditions d'utilisation",
+        "version": "L'application est disponible en version gratuite avec des options payantes.",
+        "compliance": "L'utilisateur s'engage à une utilisation respectueuse conformément à la législation française."
+      }
+    }
+  }
+}
