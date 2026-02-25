@@ -27,10 +27,11 @@
       <p class="hero-subtitle">
         {{ t("hero.subtitle") }}
       </p>
-      <button
+      <a
+        href="https://apps.apple.com/us/app/cortx/id6757309534"
         class="app-store-button"
-        data-app-store-link
-        type="button"
+        target="_blank"
+        rel="noopener noreferrer"
         :aria-label="t('hero.cta')"
       >
         <svg
@@ -49,7 +50,7 @@
           <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg>
         <span>{{ t("hero.cta") }}</span>
-      </button>
+      </a>
     </div>
   </section>
 </template>
