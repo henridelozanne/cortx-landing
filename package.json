@@ -16,6 +16,7 @@
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.18.0"
+    "@nuxt/types": "^2.18.0",
+    "nuxt-gtag": "^4.1.0"
   }
 }

@@ -3,6 +3,8 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
 
+  modules: [["nuxt-gtag", { id: "G-TR1M8X5FRH" }]],
+
   // SSG mode for optimal performance
   ssr: true,
 
@@ -78,6 +80,4 @@ export default defineNuxtConfig({
   },
 
   css: ["~/assets/css/main.css"],
-
-  modules: [],
 });
