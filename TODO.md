@@ -221,4 +221,4 @@ Consultez les guides :
 - [DEPLOYMENT.md](DEPLOYMENT.md) - Guide de déploiement
 - [LIGHTHOUSE.md](LIGHTHOUSE.md) - Guide d'optimisation
 
-Contact : memo.flashcards.contact@gmail.com
+Contact : hello@cortx-app.com

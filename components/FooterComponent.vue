@@ -46,11 +46,11 @@
         <div class="footer-contact">
           <p>{{ t("footer.contact") }}</p>
           <a
-            href="mailto:memo.flashcards.contact@gmail.com"
+            href="mailto:hello@cortx-app.com"
             class="footer-email"
-            aria-label="Send email to memo.flashcards.contact@gmail.com"
+            aria-label="Send email to hello@cortx-app.com"
           >
-            memo.flashcards.contact@gmail.com
+            hello@cortx-app.com
           </a>
         </div>
       </div>

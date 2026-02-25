@@ -191,4 +191,4 @@ Pour ajouter Google Analytics :
 
 ## 📧 Support
 
-Pour toute question : memo.flashcards.contact@gmail.com
+Pour toute question : hello@cortx-app.com

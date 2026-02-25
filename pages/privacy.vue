@@ -34,9 +34,7 @@
             <h2>{{ t("privacy.sections.editor.title") }}</h2>
             <p>{{ t("privacy.sections.editor.description") }}</p>
             <p class="contact-email">
-              <a href="mailto:memo.flashcards.contact@gmail.com">
-                memo.flashcards.contact@gmail.com
-              </a>
+              <a href="mailto:hello@cortx-app.com"> hello@cortx-app.com </a>
             </p>
             <p>{{ t("privacy.sections.editor.address") }}</p>
           </section>

@@ -132,7 +132,7 @@ Ce site est optimisé pour obtenir des scores parfaits sur Lighthouse :
 
 ## 📝 Contact
 
-Email : memo.flashcards.contact@gmail.com
+Email : hello@cortx-app.com
 
 ## 📄 License
 
