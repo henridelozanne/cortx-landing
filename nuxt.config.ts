@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
 
-  modules: [["nuxt-gtag", { id: "G-TR1M8X5FRH" }]],
+  modules: [["nuxt-gtag", { id: "G-TR1M8X5FRH", loadingStrategy: "defer" }]],
 
   // SSG mode for optimal performance
   ssr: true,
@@ -22,6 +22,12 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "en",
       },
+      script: [
+        {
+          innerHTML: `(function(){try{var userSet=localStorage.getItem('locale_user_set');var s=localStorage.getItem('locale');if(userSet==='true'&&(s==='fr'||s==='en')){window.__initialLocale=s;}else{var langs=(navigator.languages&&navigator.languages.length)?Array.from(navigator.languages):[navigator.language||''];for(var i=0;i<langs.length;i++){if(String(langs[i]).toLowerCase().startsWith('fr')){window.__initialLocale='fr';break;}}}}catch(e){}window.__initialLocale=window.__initialLocale||'en';}())`,
+          tagPosition: "bodyClose",
+        },
+      ],
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       title: "Cortx - Study smarter. Remember longer.",
@@ -67,6 +73,8 @@ export default defineNuxtConfig({
           href: "/cortx-logo.png",
         },
         { rel: "manifest", href: "/manifest.json" },
+        { rel: "preconnect", href: "https://www.googletagmanager.com" },
+        { rel: "dns-prefetch", href: "https://www.google-analytics.com" },
         {
           rel: "preload",
           as: "image",
@@ -76,8 +84,13 @@ export default defineNuxtConfig({
         },
       ],
     },
-    pageTransition: { name: "page", mode: "out-in" },
   },
 
   css: ["~/assets/css/main.css"],
+
+  vite: {
+    build: {
+      target: "es2022",
+    },
+  },
 });

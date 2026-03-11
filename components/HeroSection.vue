@@ -23,7 +23,9 @@
         </picture>
         <h2 class="hero-app-name">Cortx</h2>
       </div>
-      <h1 id="hero-title" class="hero-title" v-html="t('hero.title')"></h1>
+      <h1 id="hero-title" class="hero-title">
+        {{ heroTitleL1 }}<br />{{ heroTitleL2 }}
+      </h1>
       <p class="hero-subtitle">
         {{ t("hero.subtitle") }}
       </p>
@@ -57,6 +59,8 @@
 
 <script setup lang="ts">
 const { t } = useI18n();
+const heroTitleL1 = computed(() => t("hero.title").split("<br>")[0]);
+const heroTitleL2 = computed(() => t("hero.title").split("<br>")[1] ?? "");
 </script>
 
 <style scoped>
