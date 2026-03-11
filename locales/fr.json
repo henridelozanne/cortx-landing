@@ -27,6 +27,10 @@
       "ai": {
         "title": "Suggestions par l'IA",
         "description": "Cortx analyse vos cartes existantes et vous suggère automatiquement de nouvelles cartes pour élargir vos connaissances. Un tap pour ajouter, un pour ignorer — l'application n'est plus seulement un outil de révision, mais un moyen de découvrir ce que vous ne saviez pas encore."
+      },
+      "widget": {
+        "title": "Widget sur l'écran d'accueil",
+        "description": "Ajoutez un widget sur votre écran d'accueil et laissez vos cartes venir à vous. Une flashcard aléatoire s'affiche et change toutes les minutes, transformant chaque moment creux en micro-révision sans même ouvrir l'application."
       }
     }
   },

@@ -27,6 +27,10 @@
       "ai": {
         "title": "AI-powered suggestions",
         "description": "Cortx analyzes your existing cards and automatically suggests new ones to expand your knowledge. One tap to add, one to skip — so the app becomes not just a review tool, but a way to discover and learn things you didn't know yet."
+      },
+      "widget": {
+        "title": "Home screen widget",
+        "description": "Add a widget to your home screen and let your cards come to you. A random flashcard is displayed and refreshes every minute, turning idle moments into effortless micro-reviews without even opening the app."
       }
     }
   },

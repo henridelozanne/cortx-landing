@@ -16,7 +16,8 @@
             <IconFlashcards v-if="feature.key === 'flashcards'" />
             <IconRepetition v-else-if="feature.key === 'repetition'" />
             <IconStatistics v-else-if="feature.key === 'statistics'" />
-            <IconAI v-else />
+            <IconAI v-else-if="feature.key === 'ai'" />
+            <IconWidget v-else />
           </div>
           <h3 class="feature-title">
             {{ t(`features.items.${feature.key}.title`) }}
@@ -39,6 +40,7 @@ const features = [
   { key: "flashcards" },
   { key: "repetition" },
   { key: "ai" },
+  { key: "widget" },
   { key: "statistics" },
 ];
 
@@ -149,6 +151,37 @@ const IconAI = () =>
         d: "M5 16 L5.71 17.29 L7 18 L5.71 18.71 L5 20 L4.29 18.71 L3 18 L4.29 17.29 Z",
         opacity: "0.4",
       }),
+    ],
+  );
+
+const IconWidget = () =>
+  h(
+    "svg",
+    {
+      width: 48,
+      height: 48,
+      viewBox: "0 0 24 24",
+      fill: "currentColor",
+      stroke: "none",
+    },
+    [
+      // Téléphone
+      h("rect", { x: 5, y: 1, width: 14, height: 22, rx: 3, opacity: "0.2" }),
+      h("rect", {
+        x: 5,
+        y: 1,
+        width: 14,
+        height: 22,
+        rx: 3,
+        fill: "none",
+        stroke: "currentColor",
+        "stroke-width": "1.5",
+      }),
+      // Widget arrondi
+      h("rect", { x: 7.5, y: 5, width: 9, height: 7, rx: 1.5 }),
+      // Notch horloge : deux petits ronds
+      h("circle", { cx: 10.5, cy: 17.5, r: 1, opacity: "0.7" }),
+      h("circle", { cx: 13.5, cy: 17.5, r: 1, opacity: "0.4" }),
     ],
   );
 
