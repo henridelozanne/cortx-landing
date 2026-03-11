@@ -23,6 +23,10 @@
       "statistics": {
         "title": "Statistiques avancées",
         "description": "Comprenez votre apprentissage grâce à des statistiques détaillées sur votre progression, vos habitudes et votre mémoire. Suivez votre activité de révision, la répartition des cartes, votre régularité et voyez concrètement comment vos connaissances évoluent."
+      },
+      "ai": {
+        "title": "Suggestions par l'IA",
+        "description": "Cortx analyse vos cartes existantes et vous suggère automatiquement de nouvelles cartes pour élargir vos connaissances. Un tap pour ajouter, un pour ignorer — l'application n'est plus seulement un outil de révision, mais un moyen de découvrir ce que vous ne saviez pas encore."
       }
     }
   },

@@ -23,6 +23,10 @@
       "statistics": {
         "title": "Advanced statistics",
         "description": "Understand your learning with detailed insights into your progress, habits, and memory strength. Track review activity, card distribution, study consistency, and see exactly how your knowledge evolves over time."
+      },
+      "ai": {
+        "title": "AI-powered suggestions",
+        "description": "Cortx analyzes your existing cards and automatically suggests new ones to expand your knowledge. One tap to add, one to skip — so the app becomes not just a review tool, but a way to discover and learn things you didn't know yet."
       }
     }
   },

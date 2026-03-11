@@ -15,7 +15,8 @@
           <div class="feature-icon" :aria-hidden="true">
             <IconFlashcards v-if="feature.key === 'flashcards'" />
             <IconRepetition v-else-if="feature.key === 'repetition'" />
-            <IconStatistics v-else />
+            <IconStatistics v-else-if="feature.key === 'statistics'" />
+            <IconAI v-else />
           </div>
           <h3 class="feature-title">
             {{ t(`features.items.${feature.key}.title`) }}
@@ -37,6 +38,7 @@ const { t } = useI18n();
 const features = [
   { key: "flashcards" },
   { key: "repetition" },
+  { key: "ai" },
   { key: "statistics" },
 ];
 
@@ -119,6 +121,34 @@ const IconStatistics = () =>
       h("line", { x1: 18, y1: 20, x2: 18, y2: 10 }),
       h("line", { x1: 12, y1: 20, x2: 12, y2: 4 }),
       h("line", { x1: 6, y1: 20, x2: 6, y2: 14 }),
+    ],
+  );
+
+const IconAI = () =>
+  h(
+    "svg",
+    {
+      width: 48,
+      height: 48,
+      viewBox: "0 0 24 24",
+      fill: "currentColor",
+      stroke: "none",
+    },
+    [
+      // Grande étoile 4 branches centrale
+      h("path", {
+        d: "M12 2 L14.83 9.17 L22 12 L14.83 14.83 L12 22 L9.17 14.83 L2 12 L9.17 9.17 Z",
+      }),
+      // Petite étoile 4 branches haut-droite
+      h("path", {
+        d: "M19 2 L20.06 3.94 L22 5 L20.06 6.06 L19 8 L17.94 6.06 L16 5 L17.94 3.94 Z",
+        opacity: "0.65",
+      }),
+      // Micro étoile bas-gauche
+      h("path", {
+        d: "M5 16 L5.71 17.29 L7 18 L5.71 18.71 L5 20 L4.29 18.71 L3 18 L4.29 17.29 Z",
+        opacity: "0.4",
+      }),
     ],
   );
 
