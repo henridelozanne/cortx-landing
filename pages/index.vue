@@ -37,6 +37,8 @@ useHead({
       name: "twitter:description",
       content: computed(() => t("meta.description")),
     },
+    { property: "og:url", content: "https://cortx-app.com/" },
   ],
+  link: [{ rel: "canonical", href: "https://cortx-app.com/" }],
 });
 </script>

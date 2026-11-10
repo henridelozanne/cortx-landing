@@ -125,7 +125,9 @@ useHead({
       name: "robots",
       content: "index, follow",
     },
+    { property: "og:url", content: "https://cortx-app.com/privacy" },
   ],
+  link: [{ rel: "canonical", href: "https://cortx-app.com/privacy" }],
 });
 </script>
 
